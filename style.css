@@ -1,0 +1,10 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 200px solid red;
+    height: fit-content;
+    width: fit-content;
+    background: purple;
+    color:aqua;
+}
