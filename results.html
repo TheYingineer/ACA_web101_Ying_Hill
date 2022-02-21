@@ -17,7 +17,8 @@
 
     new URLSearchParams(window.location.search).forEach(
         (value,name) => {
-            resultsList.append('${name}:${value}')
+            resultsList.append(' ${name}:${value} ')
+            // I cannot figure out what's wrong with this line 20!!! :( 
         resultsList.append(document.createElement('br'))
     }
     )
