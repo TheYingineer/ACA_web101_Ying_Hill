@@ -4,28 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./NASA.style.css">
-    <link rel="html" href="./NASA.index.html">
+    <link rel=".NASAcss" href="./NASA.style.css">
+    <link rel="NASAhtml" href="./NASA.index.html">
     <link rel="emailicon" href="./emailicon.png">
     <link rel="locationicon" href="./locationicon.png">
     <link rel="phoneicon" href="./phoneicon.jpg">
-    <link rel="stylesheet" href="./responsive.style.css">
-    <link rel="html" href="./responsive.index.html">
-    <link rel="html" href="results.html">
-    <link rel="html" href="resume.index.html">
-    <link rel="stylesheet" href="./resume.style.css">
-    <link rel="stylesheet" href="./tictactoe.css">
-    <link rel="Javascript" href="Tic-Tac-Toe.scripts.js">
-    <link rel="html" href="Tic-Tac-Toe.index.html">
-   
-
-
-    <title>My portfolio</title>
+    <link rel="responsivecss" href="./responsive.style.css">
+    <link rel="responsivehtml" href="./responsive.index.html">
+    <link rel="results" href="results.html">
+    <link rel="resumehtml" href="resume.index.html">
+    <link rel="resumecss" href="./resume.style.css">
+    <link rel="TTTCSS" href="./tictactoe.css">
+    <link rel="TTTjs" href="Tic-Tac-Toe.scripts.js">
+    <link rel="TTThtml" href="Tic-Tac-Toe.index.html">
+   <link rel="Javascript" href="./javascript.js">
 </head>
 
 <body>
-        <form class = "questionary" action ="results.html" method ="get" enctype="multipart/form-data">
+    <title>My portfolio</title>
+
+    <table>
+
+        <tr>
+          <!-- the onclick calls a function called "handleClick" and passes itself to it -->
+          <td id='top-left' onclick="handleClick(this)" ></td>
+          <td id='top-middle'onclick="handleClick(this)""></td>
+          <td id='top-right'onclick="handleClick(this)""></td>
+        </tr>
+
+        <!-- @TODO create new rows and cells for the rest of your TTT board. -->
+        <tr>
+          <!-- the onclick calls a function called "handleClick" and passes itself to it -->
+          <td id='mid-left' onclick="handleClick(this)" ></td>
+          <td id='mid-middle'onclick="handleClick(this)""></td>
+          <td id='mid-right'onclick="handleClick(this)""></td>
+        </tr>
+
+        <!-- @TODO give each new cell an id & an event listener to call the "handleClick" function -->
+        <tr>
+          <!-- the onclick calls a function called "handleClick" and passes itself to it -->
+          <td id='bottom-left' onclick="handleClick(this)" ></td>
+          <td id='bottom-middle'onclick="handleClick(this)""></td>
+          <td id='bottom-right'onclick="handleClick(this)""></td>
+        </tr>
+
+      </table>
+
+
+    <div class = "fillform">
+        <form action ="results.html" method ="get">
             <div>
                 <label for="user">user</label>
                 <input type = "text" name = "user" id="user" placeholder = "user" required>
@@ -103,6 +132,8 @@
             </div>
         
         </form>
+    </div>
+
     
 </body>
 </html>
