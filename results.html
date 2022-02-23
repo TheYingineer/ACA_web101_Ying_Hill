@@ -17,8 +17,8 @@
 
     new URLSearchParams(window.location.search).forEach(
         (value,name) => {
-            resultsList.append(' ${name}:${value} ')
-            // I cannot figure out what's wrong with this line 20!!! :( 
+            resultsList.append(` ${name}:${value} `)
+            // the " ` " in line 20, is located above ~ key. 
         resultsList.append(document.createElement('br'))
     }
     )
